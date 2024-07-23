@@ -30,7 +30,6 @@ func (m *Matrix) Add(n *Matrix) (*Matrix, error) {
 
 }
 
-// Multiply multiplies two matrices and returns the result
 func (m *Matrix) Multiply(n *Matrix) (*Matrix, error) {
     if m.columns != n.rows {
         return nil, fmt.Errorf("matrix dimensions must match for multiplication")
